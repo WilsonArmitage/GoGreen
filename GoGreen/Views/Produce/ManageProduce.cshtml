@@ -1,0 +1,53 @@
+﻿@model ProduceViewModel
+
+@{
+    ViewData["Title"] = Model.Id > 0 ? "Manage Produce" : "Create Produce";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+</div>
+
+<form asp-controller="Produce" asp-action="Save" method="post">
+    @Html.ValidationSummary(false, null, new { @class = "alert alert-info" })
+    <div class="row">
+        @if (Model.Id > 0)
+        {
+            @Html.HiddenFor(x => x.Id)
+            <div class="col-6">
+                @Html.LabelFor(m => m.Id, new { @class = "float-right" })
+            </div>
+            <div class="col-6">
+                @Html.DisplayTextFor(m => m.Id)
+            </div>
+        }
+        <div class="col-6 float-right">
+            @Html.LabelFor(m => m.Name, new { @class = "float-right" })
+        </div>
+        <div class="col-6">
+            @Html.TextBoxFor(m => m.Name)
+        </div>
+        <div class="col-6 float-right">
+            @Html.LabelFor(m => m.Price, new { @class = "float-right" })
+        </div>
+        <div class="col-6">
+            @Html.TextBoxFor(m => m.Price)
+        </div>
+        <div class="col-6 float-right">
+            @Html.LabelFor(m => m.Stock, new { @class = "float-right" })
+        </div>
+        <div class="col-6">
+            @Html.TextBoxFor(m => m.Stock)
+        </div>
+        <div class="col-6 pt-1">
+            <input type="submit" class="btn btn-primary float-right" />
+        </div>
+        <div class="col-6 pt-1">
+            @Html.ActionLink("Cancel", "Index", "Produce", null, new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

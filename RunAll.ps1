@@ -1,0 +1,2 @@
+Start-Process -Verb runas "dotnet" "run --project ./GreenAPI/GreenAPI.csproj --urls=https://localhost:44368/"
+Start-Process -Verb runas "dotnet" "run --project ./GoGreen/GoGreen.csproj --urls=https://localhost:44317/"

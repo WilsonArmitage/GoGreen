@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoGreen", "GoGreen\GoGreen.csproj", "{D4C3871D-A0C8-439B-AD49-6B2F3E49DC6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenAPI", "GreenAPI\GreenAPI.csproj", "{4F886238-B78F-4DE7-8FA5-1FD665A317A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{B8E9EDFA-57E0-44A7-A0E1-5B8E1D8C3137}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProduceDBLib", "ProduceDBLib\ProduceDBLib.csproj", "{051F26E6-CA5C-46ED-A73E-63AD20357BCB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B278B469-5B62-4A44-B7DA-41C266B2F61F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreenAPITests", "GreenAPITests\GreenAPITests.csproj", "{EFDFE8C3-6A06-4C35-97E9-825E3A39EB92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{C11A5175-CC8C-4DFC-8F8D-4B8782AE65BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonLib", "CommonLib\CommonLib.csproj", "{AE4B15C8-87F4-408A-806E-E6B05B0C5970}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{D561FB84-1A77-4F6F-9956-1E254C4927EB}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+		RunAll.ps1 = RunAll.ps1
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4C3871D-A0C8-439B-AD49-6B2F3E49DC6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4C3871D-A0C8-439B-AD49-6B2F3E49DC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4C3871D-A0C8-439B-AD49-6B2F3E49DC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4C3871D-A0C8-439B-AD49-6B2F3E49DC6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F886238-B78F-4DE7-8FA5-1FD665A317A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F886238-B78F-4DE7-8FA5-1FD665A317A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F886238-B78F-4DE7-8FA5-1FD665A317A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F886238-B78F-4DE7-8FA5-1FD665A317A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051F26E6-CA5C-46ED-A73E-63AD20357BCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051F26E6-CA5C-46ED-A73E-63AD20357BCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{051F26E6-CA5C-46ED-A73E-63AD20357BCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{051F26E6-CA5C-46ED-A73E-63AD20357BCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDFE8C3-6A06-4C35-97E9-825E3A39EB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDFE8C3-6A06-4C35-97E9-825E3A39EB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDFE8C3-6A06-4C35-97E9-825E3A39EB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDFE8C3-6A06-4C35-97E9-825E3A39EB92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4B15C8-87F4-408A-806E-E6B05B0C5970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4B15C8-87F4-408A-806E-E6B05B0C5970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4B15C8-87F4-408A-806E-E6B05B0C5970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4B15C8-87F4-408A-806E-E6B05B0C5970}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{051F26E6-CA5C-46ED-A73E-63AD20357BCB} = {B8E9EDFA-57E0-44A7-A0E1-5B8E1D8C3137}
+		{EFDFE8C3-6A06-4C35-97E9-825E3A39EB92} = {B278B469-5B62-4A44-B7DA-41C266B2F61F}
+		{AE4B15C8-87F4-408A-806E-E6B05B0C5970} = {C11A5175-CC8C-4DFC-8F8D-4B8782AE65BB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6C6A9DA-07FA-41D9-9BA5-24ACED6DED77}
+	EndGlobalSection
+EndGlobal
